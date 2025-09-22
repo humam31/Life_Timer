@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFE TIMER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="background">
+        <div id="intialText" class="container">
+            <h1>Kindly Enter Your Date Of Birth</h1>
+        </div>
+        <div id="afterDOB" class="container hide">
+            <div class="center">
+                <h1>How much life journey you covered till now!</h1>
+                <div class="time-container">
+                    <h2>
+                        <div id="year">00</div>
+                        Years
+                    </h2>
+                    <h2>
+                        <div id="month">00</div>
+                        Months
+                    </h2>
+                    <h2>
+                        <div id="weeks">00</div>
+                        Weeks
+                    </h2>
+                    <h2>
+                        <div id="days">00</div>
+                        Days
+                    </h2>
+                    <h2>
+                        <div id="hours">00</div>
+                        Hours
+                    </h2>
+                    <h2>
+                        <div id="minutes">00</div>
+                        Minutes
+                    </h2>
+                    <h2>
+                        <div id="seconds">00</div>
+                        Seconds
+                    </h2>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="setting">
+            <i id="settingIcon" class="fa-solid fa-gear"></i>
+            <div id="settingContent" class="setting-container hide" >
+                <input type="date" id="DOB">
+                <button id="DOB-btn">ADD DOB</button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
