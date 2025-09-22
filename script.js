@@ -38,8 +38,12 @@ const updateAge = () =>{
 
 const year = Math.floor(dateDiff / (1000 * 60 * 60 * 24 * 365));
 const month = Math.floor((dateDiff % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30));
+
 const week = Math.floor((dateDiff % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24 * 7));
-const day = Math.floor((dateDiff % (1000 * 60 * 60 * 24 * 7)) / (1000 * 60 * 60 * 24));
+const day = Math.floor(
+  (dateDiff % (1000 * 60 * 60 * 24 * 30)) % (1000 * 60 * 60 * 24 * 7) 
+  / (1000 * 60 * 60 * 24)
+);
 const hour = Math.floor((dateDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 const minute = Math.floor((dateDiff % (1000 * 60 * 60)) / (1000 * 60));
 const second = Math.floor((dateDiff % (1000 * 60)) / 1000);
